@@ -6,6 +6,10 @@ import org.junit.Test;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * @author <a href="https://github.com/jcuero">Jose Fary Hurtado Cuero</a>
+ * @since 23 nov. 2021
+ */
 public class SubarrayDivisionTest {
 
     @Test

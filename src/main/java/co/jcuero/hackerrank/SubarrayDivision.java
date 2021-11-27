@@ -12,22 +12,22 @@ public class SubarrayDivision {
     }
 
     public static int birthday(List<Integer> s, int d, int m) {
-        int response = 0;
+        int result = 0;
 
         if (s.isEmpty()) {
-            return response;
+            return result;
         }
 
         for (int i = 0; i < s.size(); i++) {
             int toIndex = i + m;
 
             if (toIndex > s.size()) {
-                return response;
+                return result;
             }
 
-            response += s.subList(i, toIndex).stream().mapToInt(Integer::intValue).sum() == d ? 1 : 0;
+            result += s.subList(i, toIndex).stream().mapToInt(Integer::intValue).sum() == d ? 1 : 0;
         }
 
-        return response;
+        return result;
     }
 }
